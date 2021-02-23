@@ -21,6 +21,7 @@ class _HomePageState extends State<HomePage> {
         centerTitle: true, //centers the title
         backgroundColor:
             Colors.pink[300], //puts a color to the background of the appbar
+        elevation: 0.0, //clears the elevation of the App Bar
       ),
       body: Padding(
         padding: EdgeInsets.symmetric(), //makes a symmetric padding
@@ -56,7 +57,12 @@ class _HomePageState extends State<HomePage> {
             ),
             FloatingActionButton(
               //used for navigation to the next page
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => LocationPage()),
+                );
+              },
               child: Text('Submit'),
               backgroundColor: Colors.pink[400],
             ),
@@ -80,6 +86,7 @@ class _LocationPageState extends State<LocationPage> {
         title: Text('Your Location'),
         centerTitle: true,
         backgroundColor: Colors.pink[300],
+        elevation: 0.0,
       ),
       body: Padding(
         padding: const EdgeInsets.symmetric(),
