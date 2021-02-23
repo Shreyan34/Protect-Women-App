@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -60,8 +61,8 @@ class _HomePageState extends State<HomePage> {
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => LocationPage()), 
-                );//for navigating to the next screen
+                  MaterialPageRoute(builder: (context) => LocationPage()),
+                );
               },
               child: Text('Submit'),
               backgroundColor: Colors.pink[400],
@@ -103,7 +104,14 @@ class _LocationPageState extends State<LocationPage> {
             ),
             FloatingActionButton(
               //the 'Alert!' flating actuon button
-              onPressed: () {},
+              onPressed: () async {
+                const url = 'https://google.com';
+                if (await canLaunch(url)) {
+                  await launch(url);
+                } else {
+                  throw 'Could not launch $url';
+                }
+              },
               child: Text(
                 'Alert!',
                 style: TextStyle(
