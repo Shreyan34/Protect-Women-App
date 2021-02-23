@@ -60,8 +60,8 @@ class _HomePageState extends State<HomePage> {
               onPressed: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => LocationPage()),
-                );
+                  MaterialPageRoute(builder: (context) => LocationPage()), 
+                );//for navigating to the next screen
               },
               child: Text('Submit'),
               backgroundColor: Colors.pink[400],
