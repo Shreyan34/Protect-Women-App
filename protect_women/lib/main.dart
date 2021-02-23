@@ -86,7 +86,7 @@ class _LocationPageState extends State<LocationPage> {
         children: [
           Container(
               //location container
-              ),
+          ),
           SizedBox(
             width: 300.0,
             height: 380.0,
