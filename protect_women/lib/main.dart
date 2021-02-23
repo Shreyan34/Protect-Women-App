@@ -81,27 +81,32 @@ class _LocationPageState extends State<LocationPage> {
         centerTitle: true,
         backgroundColor: Colors.pink[300],
       ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Container(
-              //location container
-          ),
-          SizedBox(
-            width: 300.0,
-            height: 380.0,
-          ),
-          FloatingActionButton(
-            onPressed: () {},
-            child: Text(
-              'Alert!',
-              style: TextStyle(
-                color: Colors.white,
-              ),
+      body: Padding(
+        padding: const EdgeInsets.symmetric(),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Container(
+                //location container
+                ),
+            SizedBox(
+              //adding an invisible box in order to make some distance between the container and the floating action button
+              width: 300.0,
+              height: 380.0,
             ),
-            backgroundColor: Colors.red,
-          )
-        ],
+            FloatingActionButton(
+              //the 'Alert!' flating actuon button
+              onPressed: () {},
+              child: Text(
+                'Alert!',
+                style: TextStyle(
+                  color: Colors.white,
+                ),
+              ),
+              backgroundColor: Colors.red,
+            )
+          ], //Children
+        ),
       ),
     );
   }
