@@ -26,6 +26,7 @@ class _HomePageState extends State<HomePage> {
         elevation: 0.0, //clears the elevation of the App Bar
       ),
       floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.arrow_right_alt),
         onPressed: () {
           Navigator.push(
             context,
