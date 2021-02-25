@@ -33,7 +33,6 @@ class _HomePageState extends State<HomePage> {
             MaterialPageRoute(builder: (context) => LocationPage()),
           );
         },
-        child: Text('Submit'),
         backgroundColor: Colors.pink[400],
       ),
       body: Padding(
@@ -68,7 +67,7 @@ class _HomePageState extends State<HomePage> {
               width: 30.0,
               height: 40.0,
             ),
-          ],
+          ], //Children
         ),
       ),
     );
