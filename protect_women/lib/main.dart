@@ -3,6 +3,7 @@ import 'package:url_launcher/url_launcher.dart';
 
 void main() {
   runApp(MaterialApp(
+    debugShowCheckedModeBanner: false,
     home: HomePage(),
   ));
 }
@@ -23,6 +24,16 @@ class _HomePageState extends State<HomePage> {
         backgroundColor:
             Colors.pink[300], //puts a color to the background of the appbar
         elevation: 0.0, //clears the elevation of the App Bar
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => LocationPage()),
+          );
+        },
+        child: Text('Submit'),
+        backgroundColor: Colors.pink[400],
       ),
       body: Padding(
         padding: EdgeInsets.symmetric(), //makes a symmetric padding
@@ -55,17 +66,6 @@ class _HomePageState extends State<HomePage> {
             SizedBox(
               width: 30.0,
               height: 40.0,
-            ),
-            FloatingActionButton(
-              //used for navigation to the next page
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => LocationPage()),
-                );
-              },
-              child: Text('Submit'),
-              backgroundColor: Colors.pink[400],
             ),
           ],
         ),
