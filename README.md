@@ -7,9 +7,11 @@ The model that we use, is very simple to comprehend. In the first step of our mo
 
 And in the final step, a message is send, saying that the user is in distress, to the stored email id, and phone number.
 
-Contact Us: shreyankumarmishra@gmail.com
+Contact Us: helpinghand732@gmail.com
          
         
 App Made By: Shreyan Mishra (CEO),
              Ritabrata Bhaumik,
              Suvam Sarkar.
+
+Click on the "Protect-Women-App" link to visit our GitHub Page
