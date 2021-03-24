@@ -12,7 +12,6 @@ Contact Us: helpinghand732@gmail.com (email)
         
 App Made By: Shreyan Mishra (CEO),
              Ritabrata Bhaumik,
-             Suvam Sarkar.
              
              
              
